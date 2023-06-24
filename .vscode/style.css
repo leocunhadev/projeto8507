@@ -24,6 +24,7 @@
 }
 body {
   background: var(---bg-url) no-repeat top center/cover;
+  height: 100vh;
 }
 
 body * {
@@ -128,4 +129,14 @@ ul li a:hover {
 }
 #social-links a:hover {
   background: var(---highlight-color);
+}
+
+/*media queries*/
+@media (min-width: 700px) {
+  :root {
+    --bg--url: url(./bg-desktop-mudança.jpg);
+  }
+  .light {
+    --bg--url: url(./bg-desktop-light-mudança.jpg);
+  }
 }
